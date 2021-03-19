@@ -1,49 +1,72 @@
+/* default */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+
+:root {
+    --light-bg: #264441;
+    --dark-bg: #171c26;
+    --left: #1edeae;
+    --right: #21bad7;
+    --card: rgba(255, 255, 255, 0.25);
+    --text: #ecebeb;
+    --dim: #c7c8dd;
+    --small: "Open Sans", sans-serif;
+    --big: "Titillium Web", sans-serif;
+}
+
 body {
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(23, 28, 38);
+    background: linear-gradient(
+        315deg,
+        rgba(23, 28, 38, 1) 60%,
+        rgba(38, 68, 65, 1) 100%
+    );
+    color: var(--dim);
+    font-family: var(--small);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dim);
+}
+
+input {
+    display: block;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+p {
+    line-height: 1.4px;
+}
+
+/* custom */
+
+.container {
+    height: 100vh;
+    padding: 4%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f1f0f5;
-    background-blend-mode: darken;
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: cornsilk;
+    padding: 0.5em 4%;
+    color: var(--text);
+    background-color: var(--card);
+    opacity: ;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
-#nav1 {
-    padding: 3px;
-    background-color: rgb(190, 204, 204);
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    border-radius: 3px 3px 3px 3px;
+.nav-brand {
+    font-family: var(--big);
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-#nosubmit {
-    margin-left: 17%;
-    margin-right: 17%;
-    margin-top: 10px;
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    /*background-color: #81dacf;*/
-    background: repeating-linear-gradient(-45deg, #7cd4cf, #7cd4cf 1.5px, #49c8c1 2px, #49c8c1 4px);
-    border-radius: 5px 5px 5px 5px;
-}
-
-input[type=text],
-input[type=password],
-input[type=email] {
-    width: 300px;
-    height: 35px;
-    border-radius: 5% 5% 5% 5%;
-}
-
-#submit {
-    margin-top: 20px;
-    margin-left: 45%;
-    width: 100px;
-    height: 35px;
-    font-size: 20px;
-    color: blueviolet;
-    border-radius: 3px 3px 3px 3px;
+.nav-link {
+    margin: 0 0.5em;
 }
