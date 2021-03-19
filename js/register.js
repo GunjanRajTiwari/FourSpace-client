@@ -31,7 +31,7 @@ function register(e) {
     console.log(data);
     fetch(domain + "/register", {
         method: 'POST',
-        mode = 'CORS', //cross origin resource sharing
+        mode: 'CORS', //cross origin resource sharing
         body: JSON.stringify(data)
     }).then(response => { //response is a veriable, can write anything there
         console.log(response.json());
