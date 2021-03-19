@@ -1,0 +1,43 @@
+body {
+    background: repeating-linear-gradient(-45deg, #7cd4cf, #7cd4cf 1.5px, #49c8c1 2px, #49c8c1 4px);
+    justify-content: center;
+    align-items: center;
+    background-color: #8674c7;
+    background-blend-mode: darken;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#nav1 {
+    padding: 3px;
+    background-color: aqua;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#nosubmit {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #81dacf;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 300px;
+    height: 35px;
+    border-radius: 5% 5% 5% 5%;
+}
+
+#submit {
+    margin-top: 20px;
+    margin-left: 45%;
+    width: 100px;
+    height: 35px;
+}

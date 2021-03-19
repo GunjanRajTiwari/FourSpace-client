@@ -33,7 +33,7 @@ function register(e) {
         method: 'POST',
         mode = 'CORS', //cross origin resource sharing
         body: JSON.stringify(data)
-    }).then(respnose => {
+    }).then(response => { //response is a veriable, can write anything there
         console.log(response.json());
     })
 
