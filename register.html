@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="C:\Users\dhung\OneDrive\Desktop\DBMS PROJECT\FourSpace-client\css\register.css">
+    <link rel="stylesheet" type="text/css" href="./css/register.css">
     <title>Register</title>
 </head>
 
@@ -15,27 +15,36 @@
             Register
         </nav>
         <form id="register-form">
-            <label for="company">Company</label>
-            <input type="radio" name="choice" class="choice" value="Company" required>
-            <br>
-            <label for="user">Indvidual</label>
-            <input type="radio" name="choice" class="choice" value="Individual" required>
-            <br>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-            <br>
-            <label for="pw">Password:</label>
-            <input type="password" name="pw" id="pw" required>
-            <br>
-            <label for="pw1">Retype Password:</label>
-            <input type="password" name="pw1" id="pw1" required>
-            <br>
-            <br>
+            <div id="nosubmit">
+                <hr>
+                <label for="company">Company</label>
+                <input type="radio" name="choice" class="choice" value="Company" required>
+                <label for="user">Indvidual</label>
+                <input type="radio" name="choice" class="choice" value="Individual" required>
+                <br>
+                <hr>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="your@email.domain" required>
+                <br>
+                <br>
+                <label for="pw">Password:</label>
+                <br>
+                <input type="password" name="pw" id="pw" required placeholder="Password">
+                <br>
+                <br>
+                <label for="pw1">Retype Password:</label>
+                <br>
+                <input type="password" name="pw1" id="pw1" placeholder="Retype Password" required>
+                <br>
+            </div>
 
-            <input type="submit" name="pw" id="pw" value="Submit" required>
+            <input type="submit" name="submit" id="submit" value="Submit" required>
         </form>
     </div>
 
