@@ -1,51 +1,9 @@
 /* default */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
-
-:root {
-    --light-bg: #264441;
-    --dark-bg: #171c26;
-    --left: #1edeae;
-    --right: #21bad7;
-    --card: rgba(255, 255, 255, 0.25);
-    --text: #ecebeb;
-    --dim: #c7c8dd;
-    --small: "Open Sans", sans-serif;
-    --big: "Titillium Web", sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: rgb(23, 28, 38);
-    background: linear-gradient(
-        315deg,
-        rgba(23, 28, 38, 1) 60%,
-        rgba(38, 68, 65, 1) 100%
-    );
-    color: var(--dim);
-    font-family: var(--small);
-}
-
-a {
-    text-decoration: none;
-    color: var(--dim);
-}
-
-input {
-    display: block;
-    padding: 0.5em;
-    margin: 0.5em 0;
-}
-
-p {
-    line-height: 1.4px;
-}
+@import url(./default.css);
 
 /* custom */
 
 .container {
-    height: 100vh;
     padding: 4%;
 }
 
@@ -56,7 +14,6 @@ p {
     padding: 0.5em 4%;
     color: var(--text);
     background-color: var(--card);
-    opacity: ;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
@@ -69,4 +26,45 @@ p {
 
 .nav-link {
     margin: 0 0.5em;
+}
+
+.title {
+    text-align: center;
+    color: var(--left);
+    margin: 0 0 0.8em;
+}
+
+form {
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 2em 2.5em;
+    margin: 1em auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+}
+
+#submit {
+    width: 8.5em;
+    padding: 0.8em 0;
+    align-self: center;
+    border: none;
+    background-color: var(--left);
+    border-radius: 50px;
+    transition: width 0.2s ease-out;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#submit:hover {
+    width: 9em;
+}
+
+.choice {
+    margin: 1em;
+    display: inline-block;
 }
