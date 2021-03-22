@@ -1,4 +1,5 @@
 @import url(./default.css);
+@import url(https://css.gg/profile.css);
 .nav {
     display: flex;
     justify-content: space-between;
@@ -18,4 +19,35 @@
 
 .nav-link {
     margin: 0 0.5em;
+}
+
+.fas {
+    font-size: 24px;
+}
+
+
+/* .gg-profile {
+    margin-left: 6%;
+    margin-top: 6%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 100px;
+     transform: scale(7);
+    } */
+
+.profile-icon {
+    color: red;
+}
+
+.details {
+    display: flex;
+}
+
+.name-n-email {
+    margin-left: 3%;
+    margin-top: 2%
+}
+
+.rating-n-available {
+    margin-left: 1%;
 }
