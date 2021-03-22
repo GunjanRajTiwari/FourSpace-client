@@ -1,0 +1,41 @@
+@import url(./default.css);
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 4%;
+    color: var(--text);
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.nav-brand {
+    font-family: var(--big);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin: 0 0.5em;
+}
+
+.container {
+    margin: 0 4%;
+}
+
+.profile-icon {
+    font-size: 100px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 500px;
+}
+
+.description {
+    margin-left: 3%;
+}
