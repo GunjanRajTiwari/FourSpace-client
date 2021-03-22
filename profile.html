@@ -7,33 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="/css/profile.css">
-
+    <script src="https://kit.fontawesome.com/82262f4dc4.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="show_details()">
     <nav class="nav glass">
         <div class="nav-brand">FourSpace</div>
         <div class="nav-links">
-            <a href="#" class="nav-link">Register</a>
+            <a href="./register.html" class="nav-link">Register</a>
             <a href="#" class="nav-link">Login</a>
         </div>
     </nav>
-
-    <div class="prof" align="center">
-        <h1>Profile</h1>
-    </div>
-    <div class="details">
-        <div class="profile-icon">
-            <i class="gg-profile"></i>
+    <div class="container">
+        <div class="prof" align="center">
+            <h1>Profile</h1>
         </div>
-        <div class="name-n-email">
-            <h3 id="name"></h3>
-            <h3 id="email"></h3>
+        <div class="details">
+            <div class="profile-icon">
+                <i class="far fa-user-circle"></i>
+            </div>
+            <div class="description">
+                <h3 id="name"></h3>
+                <h3 id="email"></h3>
+                <h3 id="ratings"></h3>
+                <h3 id="available"></h3>
+            </div>
         </div>
-    </div>
-    <div class="rating-n-available">
-        <h3 id="ratings"></h3>
-        <h3 id="available"></h3>
     </div>
 </body>
 <script src="js/profile.js"></script>

@@ -21,33 +21,22 @@
     margin: 0 0.5em;
 }
 
-.fas {
-    font-size: 24px;
+.container {
+    margin: 0 4%;
 }
 
-
-/* .gg-profile {
-    margin-left: 6%;
-    margin-top: 6%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    font-size: 100px;
-     transform: scale(7);
-    } */
-
 .profile-icon {
-    color: red;
+    font-size: 100px;
 }
 
 .details {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 500px;
 }
 
-.name-n-email {
+.description {
     margin-left: 3%;
-    margin-top: 2%
-}
-
-.rating-n-available {
-    margin-left: 1%;
 }
