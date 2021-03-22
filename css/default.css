@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
-
 :root {
     --light-bg: #264441;
     --dark-bg: #171c26;
@@ -17,11 +16,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: rgb(23, 28, 38);
-    background: linear-gradient(
-        315deg,
-        rgba(23, 28, 38, 1) 60%,
-        rgba(38, 68, 65, 1) 100%
-    );
+    background: linear-gradient( 315deg, rgba(23, 28, 38, 1) 60%, rgba(38, 68, 65, 1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--dim);
@@ -45,3 +40,4 @@ input {
 p {
     line-height: 1.4px;
 }
+
