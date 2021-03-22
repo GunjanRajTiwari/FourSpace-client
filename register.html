@@ -1,89 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./css/register.css" />
-        <title>Register</title>
-    </head>
 
-    <body>
-        <nav class="nav glass">
-            <div class="nav-brand">FourSpace</div>
-            <div class="nav-links">
-                <a href="#" class="nav-link">Register</a>
-                <a href="#" class="nav-link">Login</a>
-            </div>
-        </nav>
-        <div class="container">
-            <form id="register-form">
-                <h1 class="title">Register</h1>
-                <div class="radio-btn">
-                    <label for="company">Company</label>
-                    <input
-                        type="radio"
-                        name="choice"
-                        class="choice"
-                        value="Company"
-                        required
-                    />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/register.css" />
+    <title>Register</title>
+</head>
 
-                    <label for="user">Indvidual</label>
-                    <input
-                        type="radio"
-                        name="choice"
-                        class="choice"
-                        value="Individual"
-                        required
-                    />
-                </div>
-
-                <label for="name">Name:</label>
-                <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    required
-                />
-
-                <label for="email">Email:</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="your@email.domain"
-                    required
-                />
-
-                <label for="pw">Password:</label>
-                <input
-                    type="password"
-                    name="pw"
-                    id="pw"
-                    required
-                    placeholder="Password"
-                />
-
-                <label for="pw1">Retype Password:</label>
-                <input
-                    type="password"
-                    name="pw1"
-                    id="pw1"
-                    placeholder="Retype Password"
-                    required
-                />
-
-                <input
-                    type="submit"
-                    name="submit"
-                    id="submit"
-                    value="Submit"
-                    required
-                />
-            </form>
+<body>
+    <nav class="nav glass">
+        <div class="nav-brand">FourSpace</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Register</a>
+            <a href="#" class="nav-link">Login</a>
         </div>
-        <script src="./js/register.js"></script>
-    </body>
+    </nav>
+    <div class="container">
+        <form id="register-form">
+            <h1 class="title">Register</h1>
+            <div class="radio-btn">
+                <label for="company">Company</label>
+                <input type="radio" name="choice" class="choice" value="Company" required />
+
+                <label for="user">Indvidual</label>
+                <input type="radio" name="choice" class="choice" value="Individual" required />
+            </div>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your@email.domain" required />
+
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" id="pw" required placeholder="Password" />
+
+            <label for="pw1">Retype Password:</label>
+            <input type="password" name="pw1" id="pw1" placeholder="Retype Password" required />
+
+            <input type="submit" name="submit" id="submit" value="Submit" required />
+        </form>
+    </div>
+    <script src="./js/register.js"></script>
+</body>
+
 </html>
