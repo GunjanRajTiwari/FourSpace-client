@@ -1,49 +1,70 @@
-body {
-    justify-content: center;
+/* default */
+@import url(./default.css);
+
+/* custom */
+
+.container {
+    padding: 4%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f1f0f5;
-    background-blend-mode: darken;
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: cornsilk;
+    padding: 0.5em 4%;
+    color: var(--text);
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
-#nav1 {
-    padding: 3px;
-    background-color: rgb(190, 204, 204);
-    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    border-radius: 3px 3px 3px 3px;
+.nav-brand {
+    font-family: var(--big);
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
-#nosubmit {
-    margin-left: 17%;
-    margin-right: 17%;
-    margin-top: 10px;
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    /*background-color: #81dacf;*/
-    background: repeating-linear-gradient(-45deg, #7cd4cf, #7cd4cf 1.5px, #49c8c1 2px, #49c8c1 4px);
-    border-radius: 5px 5px 5px 5px;
+.nav-link {
+    margin: 0 0.5em;
 }
 
-input[type=text],
-input[type=password],
-input[type=email] {
-    width: 300px;
-    height: 35px;
-    border-radius: 5% 5% 5% 5%;
+.title {
+    text-align: center;
+    color: var(--left);
+    margin: 0 0 0.8em;
+}
+
+form {
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 2em 2.5em;
+    margin: 1em auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
 }
 
 #submit {
-    margin-top: 20px;
-    margin-left: 45%;
-    width: 100px;
-    height: 35px;
-    font-size: 20px;
-    color: blueviolet;
-    border-radius: 3px 3px 3px 3px;
+    width: 8.5em;
+    padding: 0.8em 0;
+    align-self: center;
+    border: none;
+    background-color: var(--left);
+    border-radius: 50px;
+    transition: width 0.2s ease-out;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#submit:hover {
+    width: 9em;
+}
+
+.choice {
+    margin: 1em;
+    display: inline-block;
 }

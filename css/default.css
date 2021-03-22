@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
+:root {
+    --light-bg: #264441;
+    --dark-bg: #171c26;
+    --left: #1edeae;
+    --right: #21bad7;
+    --card: rgba(255, 255, 255, 0.25);
+    --text: #ecebeb;
+    --dim: #c7c8dd;
+    --small: "Open Sans", sans-serif;
+    --big: "Titillium Web", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(23, 28, 38);
+    background: linear-gradient( 315deg, rgba(23, 28, 38, 1) 60%, rgba(38, 68, 65, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--dim);
+    font-family: var(--small);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dim);
+}
+
+input {
+    display: block;
+    padding: 0.6em 0.5em;
+    margin: 0.5em 0 1em;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+p {
+    line-height: 1.4px;
+}
+
