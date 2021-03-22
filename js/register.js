@@ -1,13 +1,7 @@
-/*
-var pwa = document.getElementById("pw1").value;
-var pwb = document.getElementById("pw").value;
-if (pwa != pwb) {
-    alert("Passwords are not the same.");
-}
-*/
-var domain = "localhost:8080";
-const form = document.getElementById('register-form');
-form.addEventListener('submit', register);
+var domain = "http://localhost:8080";
+
+const form = document.getElementById("register-form");
+form.addEventListener("submit", register);
 
 function register(e) {
     e.preventDefault();
@@ -18,23 +12,27 @@ function register(e) {
         return;
     }
     var data = {};
-    var user_type = document.getElementsByName('choice');
+    var user_type = document.getElementsByName("choice");
     for (i = 0; i < user_type.length; i++) {
         if (user_type[i].checked) {
             data.type = user_type[i].value;
         }
     }
 
+    console.log(JSON.stringify(data));
     data.name = document.getElementById("name").value;
     data.email = document.getElementById("email").value;
     data.password = document.getElementById("pw").value;
     console.log(data);
     fetch(domain + "/register", {
-        method: 'POST',
-        mode: 'CORS', //cross origin resource sharing
-        body: JSON.stringify(data)
-    }).then(response => { //response is a veriable, can write anything there
-        console.log(response.json());
+        method: "POST",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
+        // mode: "no-cors", //cross origin resource sharing
+        body: JSON.stringify(data),
     })
-
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((e) => console.log(e));
 }
