@@ -1,4 +1,4 @@
-var domain = "http://localhost:8080";
+var domain = "https://fourspace.herokuapp.com";
 
 const form = document.getElementById("register-form");
 form.addEventListener("submit", register);
