@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="C:\Users\dhung\OneDrive\Desktop\DBMS PROJECT\FourSpace-client\css\register.css"
+        />
+        <title>Login</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="C:\Users\dhung\OneDrive\Desktop\DBMS PROJECT\FourSpace-client\css\register.css">
-    <title>Login</title>
-</head>
+    <body>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="radio-btn">
+                            <input
+                                type="radio"
+                                name="choice"
+                                class="choice"
+                                value="Company"
+                                required
+                            />
+                        </div>
+                        <label for="company">Company</label>
+                        <div class="radio-btn">
+                            <input
+                                type="radio"
+                                name="choice"
+                                class="choice"
+                                value="Company"
+                                required
+                            />
+                        </div>
+                        <label for="company">Individual</label>
 
-<body>
-    <div class="box">
-        <div class="container">
-            <div class="form">
-                <h2>Login</h2>
-                <form>
-                    <div class="radio-btn">
-                        <input type="radio" name="choice" class="choice" value="Company" required>
-                    </div>
-                    <label for="company">Company</label>
-                    <div class="radio-btn">
-                        <input type="radio" name="choice" class="choice" value="Company" required>
-                    </div>
-                    <label for="company">Individual</label>
-
-                    <div class="InputBox">
-                        <label for="name">Name </label>
-                        <input type="text" placeholder="Username">
-                    </div>
-                    <div class="InputBox">
-                        <label for="password">Password</label>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div class="InputBox">
-                        <input type="submit" value="Login">
-                    </div>
-                    <p class="forget">Forgot Password ? <a href="#">Click Here</a> </p>
-                    <p class="forget">Dont have an account ? <a href="#">Sign Up</a> </p>
-
-                </form>
+                        <div class="InputBox">
+                            <label for="name">Name </label>
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="InputBox">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <div class="InputBox">
+                            <input type="submit" value="Login" />
+                        </div>
+                        <p class="forget">Forgot Password ? <a href="#">Click Here</a></p>
+                        <p class="forget">Dont have an account ? <a href="#">Sign Up</a></p>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
