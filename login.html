@@ -4,57 +4,46 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="C:\Users\dhung\OneDrive\Desktop\DBMS PROJECT\FourSpace-client\css\register.css"
-        />
+        <link rel="stylesheet" type="text/css" href="./css/register.css" />
         <title>Login</title>
     </head>
 
     <body>
-        <div class="box">
-            <div class="container">
-                <div class="form">
-                    <h2>Login</h2>
-                    <form>
-                        <div class="radio-btn">
-                            <input
-                                type="radio"
-                                name="choice"
-                                class="choice"
-                                value="Company"
-                                required
-                            />
-                        </div>
-                        <label for="company">Company</label>
-                        <div class="radio-btn">
-                            <input
-                                type="radio"
-                                name="choice"
-                                class="choice"
-                                value="Company"
-                                required
-                            />
-                        </div>
-                        <label for="company">Individual</label>
-
-                        <div class="InputBox">
-                            <label for="name">Name </label>
-                            <input type="text" placeholder="Username" />
-                        </div>
-                        <div class="InputBox">
-                            <label for="password">Password</label>
-                            <input type="password" placeholder="Password" />
-                        </div>
-                        <div class="InputBox">
-                            <input type="submit" value="Login" />
-                        </div>
-                        <p class="forget">Forgot Password ? <a href="#">Click Here</a></p>
-                        <p class="forget">Dont have an account ? <a href="#">Sign Up</a></p>
-                    </form>
-                </div>
+        <nav class="nav">
+            <div class="nav-brand">FourSpace</div>
+            <div class="nav-links">
+                <a href="/register.html" class="nav-link">Register</a>
+                <a href="/login.html" class="nav-link">Login</a>
+                <a href="/contests.html" class="nav-link">Contests</a>
             </div>
+        </nav>
+        <div class="container">
+            <form id="login-form">
+                <h1 class="title">Login</h1>
+                <div class="radio-btn">
+                    <label for="company">Company</label>
+                    <input type="radio" name="choice" class="choice" value="company" required />
+
+                    <label for="user">Indvidual</label>
+                    <input type="radio" name="choice" class="choice" value="user" required />
+                </div>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email" />
+
+                <label for="pw">Password:</label>
+                <input
+                    type="password"
+                    name="pw"
+                    id="pw"
+                    required
+                    placeholder="Password"
+                    autocomplete="true"
+                />
+
+                <input type="submit" name="submit" id="submit" value="Submit" required />
+            </form>
         </div>
+        <script src="./js/login.js"></script>
     </body>
 </html>
