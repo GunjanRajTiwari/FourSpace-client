@@ -5,6 +5,7 @@ form.addEventListener("submit", register);
 
 function register(e) {
     e.preventDefault();
+
     var p1 = document.getElementById("pw").value;
     var p2 = document.getElementById("pw1").value;
     if (p1 != p2) {
@@ -19,12 +20,12 @@ function register(e) {
         }
     }
 
-    console.log(JSON.stringify(data));
     data.name = document.getElementById("name").value;
     data.email = document.getElementById("email").value;
     data.password = document.getElementById("pw").value;
-    console.log(data);
+
     fetch(domain + "/register", {
+<<<<<<< HEAD
             method: "POST",
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
@@ -34,5 +35,17 @@ function register(e) {
         })
         .then((res) => res.json())
         .then((data) => console.log(data))
+=======
+        method: "POST",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
+        // mode: "no-cors", //cross origin resource sharing
+        body: JSON.stringify(data),
+    })
+        .then(() => {
+            location.href = "/login.html";
+        })
+>>>>>>> 72ef9579bfbaf7fcbbe7e2fd2206975827d1a46a
         .catch((e) => console.log(e));
 }

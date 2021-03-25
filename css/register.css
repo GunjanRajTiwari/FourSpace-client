@@ -1,31 +1,11 @@
 /* default */
+
 @import url(./default.css);
 
 /* custom */
 
 .container {
     padding: 4%;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 4%;
-    color: var(--text);
-    background-color: var(--card);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-}
-
-.nav-brand {
-    font-family: var(--big);
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.nav-link {
-    margin: 0 0.5em;
 }
 
 .title {
@@ -46,7 +26,7 @@ form {
 }
 
 #submit {
-    width: 8.5em;
+    width: 8em;
     padding: 0.8em 0;
     align-self: center;
     border: none;
@@ -61,7 +41,7 @@ form {
 }
 
 #submit:hover {
-    width: 9em;
+    width: 8.5em;
 }
 
 .choice {
