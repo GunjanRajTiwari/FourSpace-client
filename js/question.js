@@ -1,12 +1,16 @@
-const editor = document.getElementById("editor");
+const editorDiv = document.getElementById("editor");
 
-var myCodeMirror = CodeMirror(editor, {
+var editor = CodeMirror(editorDiv, {
     lineNumbers: true,
-    mode: "javascript",
+    lineWraping: true,
+    mode: "clike",
     theme: "dracula",
     viewportMargin: 2,
+    lint: true,
+    closeBrackets: true,
 });
 
-editor.addEventListener("click", () => {
-    console.log(myCodeMirror.getValue());
+editorDiv.addEventListener("click", () => {
+    editor.setOption("mode", "javascript");
+    console.log(editor.getMode());
 });

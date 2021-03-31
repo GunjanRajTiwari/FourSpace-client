@@ -1,9 +1,43 @@
+@import url(./default.css);
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 4%;
+    color: var(--text);
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.nav-brand {
+    font-family: var(--big);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin: 0 0.5em;
+}
+
+.container {
+    margin: 0 4%;
+}
+
+.title {
+    text-align: center;
+}
+
 .editor {
     background-color: #282a36;
     margin: 1em;
     padding: 1em;
-    width: 60%;
+    width: 90%;
     margin: auto;
     border: 1px solid #aaa;
     border-radius: 8px;
+}
+
+.CodeMirror {
+    font-size: 14px;
 }

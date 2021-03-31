@@ -8,7 +8,21 @@
         <link rel="stylesheet" href="./css/question.css" />
     </head>
     <body>
-        <div class="editor" id="editor"></div>
+        <nav class="nav glass">
+            <div class="nav-brand">FourSpace</div>
+            <div class="nav-links">
+                <a href="/register.html" class="nav-link">Register</a>
+                <a href="/login.html" class="nav-link">Login</a>
+                <a href="/contests.html" class="nav-link">Contests</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="title">
+                <h1>Question</h1>
+            </div>
+            <div class="editor" id="editor"></div>
+        </div>
+
         <!-- CodeMirror -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
         <link
@@ -16,6 +30,10 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"
         />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/mode/clike/clike.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/python/python.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/edit/closebrackets.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/lint/json-lint.min.js"></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/dracula.css"
