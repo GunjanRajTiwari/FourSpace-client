@@ -43,3 +43,23 @@
 .description {
     margin-left: 3%;
 }
+
+.logout {
+    outline: none;
+    width: 8em;
+    padding: 0.8em 0;
+    margin: 1em auto;
+    border: none;
+    background-color: var(--left);
+    border-radius: 50px;
+    transition: width 0.2s ease-out;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logout:hover {
+    width: 8.5em;
+}
