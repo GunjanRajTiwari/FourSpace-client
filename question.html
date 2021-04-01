@@ -20,7 +20,23 @@
             <div class="title">
                 <h1>Question</h1>
             </div>
-            <div class="editor" id="editor"></div>
+            <div class="editor-area">
+                <div class="editor-top">
+                    <span class="solution">Your Solution:</span>
+                    <div class="language">
+                        <label for="cars">Language:</label>
+
+                        <select name="lang" class="lang" id="lang">
+                            <option value="clike">C++</option>
+                            <option value="text/x-java">Java</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="editor" id="editor"></div>
+            </div>
         </div>
 
         <!-- CodeMirror -->

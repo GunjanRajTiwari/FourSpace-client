@@ -28,16 +28,43 @@
     text-align: center;
 }
 
-.editor {
+.editor-area {
     background-color: #282a36;
-    margin: 1em;
-    padding: 1em;
+    margin: 1em 0.5em;
+    padding: 0.5em;
     width: 90%;
     margin: auto;
     border: 1px solid #aaa;
-    border-radius: 8px;
+    border-radius: 5px;
+}
+
+.lang {
+    height: 24px;
+    background-color: var(--dim);
+    font-family: var(--big);
+    outline: none;
+    border: none;
+    border-radius: 5px 0 5px 0;
+}
+
+.editor-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
 }
 
 .CodeMirror {
     font-size: 14px;
+}
+
+.CodeMirror-scrollbar-filler {
+    background-color: #282a36 !important;
+}
+
+.CodeMirror-hscrollbar {
+    height: 0;
+}
+
+.CodeMirror-vscrollbar {
+    width: 0;
 }

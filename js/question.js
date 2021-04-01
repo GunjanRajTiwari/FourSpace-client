@@ -1,4 +1,5 @@
 const editorDiv = document.getElementById("editor");
+const langSelect = document.getElementById("lang");
 
 var editor = CodeMirror(editorDiv, {
     lineNumbers: true,
@@ -10,7 +11,8 @@ var editor = CodeMirror(editorDiv, {
     closeBrackets: true,
 });
 
-editorDiv.addEventListener("click", () => {
-    editor.setOption("mode", "javascript");
-    console.log(editor.getMode());
-});
+const langChange = () => {
+    editor.setOption("mode", langSelect.value);
+};
+
+langSelect.onchange = langChange;
