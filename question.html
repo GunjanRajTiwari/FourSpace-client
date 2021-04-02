@@ -29,13 +29,28 @@
                         <select name="lang" class="lang" id="lang">
                             <option value="clike">C++</option>
                             <option value="text/x-java">Java</option>
-                            <option value="javascript">JavaScript</option>
+                            <!-- <option value="javascript">JavaScript</option> -->
                             <option value="python">Python</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="editor" id="editor"></div>
+
+                <div class="editor-bottom">
+                    <div class="input">
+                        <label for="input">Input:</label>
+                        <textarea name="input" id="input" class="input-field"></textarea>
+                    </div>
+                    <div class="output">
+                        <label for="output">Output:</label>
+                        <textarea name="output" id="output" class="output-field"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="run()" class="run">Run</button>
+                        <button onclick="submit()" class="run">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
 
