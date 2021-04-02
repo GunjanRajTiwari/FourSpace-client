@@ -2,7 +2,7 @@ const editorDiv = document.getElementById("editor");
 const langSelect = document.getElementById("lang");
 const inputField = document.getElementById("input");
 const outputField = document.getElementById("output");
-const url = "http://localhost:8080";
+const domain = "https://fourspace.herokuapp.com";
 
 var editor = CodeMirror(editorDiv, {
     lineNumbers: true,
@@ -36,7 +36,7 @@ async function run() {
             location.href = "/login.html";
         }
 
-        var response = await fetch(url + "/run", {
+        var response = await fetch(domain + "/run", {
             method: "POST",
             // mode: "no-cors",
             headers: {
