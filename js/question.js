@@ -22,7 +22,7 @@ langSelect.onchange = () => {
     if (toLang == "java") {
         toLang = "text/x-java";
     }
-    editor.setOption("mode", langSelect.value);
+    editor.setOption("mode", toLang);
 };
 
 const langMap = {
