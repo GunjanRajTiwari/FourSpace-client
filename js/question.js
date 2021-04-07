@@ -9,13 +9,19 @@ var editor = CodeMirror(editorDiv, {
     lineWraping: true,
     mode: "clike",
     theme: "dracula",
-    viewportMargin: 2,
     lint: true,
+    indentUnit: 4,
+    tabSize: 4,
+    smartIndent: true,
     closeBrackets: true,
     value: "",
 });
 
 langSelect.onchange = () => {
+    var toLang = langSelect.value;
+    if (toLang == "java") {
+        toLang = "text/x-java";
+    }
     editor.setOption("mode", langSelect.value);
 };
 
@@ -51,7 +57,7 @@ async function run() {
             }),
         });
         var output = await response.json();
-        if (output.status) {
+        if (output.status == "1") {
             outputField.style.outline = "2px solid green";
         } else {
             outputField.value = output.message;
