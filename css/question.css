@@ -1,0 +1,111 @@
+@import url(./default.css);
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 4%;
+    color: var(--text);
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.nav-brand {
+    font-family: var(--big);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin: 0 0.5em;
+}
+
+.container {
+    margin: 0 4%;
+}
+
+.title {
+    text-align: center;
+}
+
+.editor-area {
+    background-color: #282a36;
+    margin: 1em 0.5em;
+    padding: 0.5em;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.lang {
+    height: 24px;
+    background-color: var(--dim);
+    font-family: var(--big);
+    outline: none;
+    border: none;
+    border-radius: 5px 0 5px 0;
+}
+
+.editor-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.CodeMirror {
+    font-size: 14px;
+}
+
+.CodeMirror-scrollbar-filler {
+    background-color: #282a36 !important;
+}
+
+.CodeMirror-hscrollbar {
+    height: 0;
+}
+
+.CodeMirror-vscrollbar {
+    width: 0;
+}
+
+.editor-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.run {
+    display: block;
+    width: 5em;
+    margin: 0.5em;
+    padding: 0.5em 0;
+    border: none;
+    background-color: var(--left);
+    border-radius: 50px;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.buttons {
+    width: 120px;
+}
+
+.editor-bottom > div > label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.input-field,
+.output-field {
+    height: 120px;
+    width: 25vw;
+    background-color: var(--dim);
+    outline: none;
+    padding: 0.4em;
+}
