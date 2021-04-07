@@ -25,7 +25,6 @@ function register(e) {
     data.password = document.getElementById("pw").value;
 
     fetch(domain + "/register", {
-<<<<<<< HEAD
             method: "POST",
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
@@ -33,19 +32,8 @@ function register(e) {
             // mode: "no-cors", //cross origin resource sharing
             body: JSON.stringify(data),
         })
-        .then((res) => res.json())
-        .then((data) => console.log(data))
-=======
-        method: "POST",
-        headers: {
-            "Content-type": "application/json; charset=UTF-8",
-        },
-        // mode: "no-cors", //cross origin resource sharing
-        body: JSON.stringify(data),
-    })
         .then(() => {
             location.href = "/login.html";
         })
->>>>>>> 72ef9579bfbaf7fcbbe7e2fd2206975827d1a46a
         .catch((e) => console.log(e));
 }
