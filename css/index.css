@@ -1,0 +1,13 @@
+.jumbo {
+    text-align: center;
+    font-family: var(--big);
+    color: var(--left);
+    font-size: 3.6rem;
+}
+
+.tagline {
+    padding: 1em 20%;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    line-height: 1.6;
+}
