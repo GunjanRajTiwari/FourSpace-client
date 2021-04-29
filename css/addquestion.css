@@ -1,0 +1,56 @@
+@import url(./default.css);
+.container {
+    padding: 4%;
+}
+
+.title {
+    text-align: center;
+    color: var(--left);
+    margin: 0 0 0.8em;
+}
+
+form {
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 2em 2.5em;
+    margin: 1em auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+}
+
+#submit {
+    margin: 1.5em 0 0;
+    width: 8em;
+    padding: 0.8em 0;
+    align-self: center;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.2s ease-out;
+    background: linear-gradient(90deg, var(--left), var(--right));
+    color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#submit:hover {
+    transform: scaleX(1.05);
+}
+
+#description,
+#testcases,
+#output {
+    border-radius: 8px;
+    font-family: var(--small);
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    outline: none;
+}
+
+.one-line {
+    float: left;
+}

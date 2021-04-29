@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Questions</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/addquestion.css'>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-brand">FourSpace</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Register</a>
+            <a href="#" class="nav-link">Login</a>
+            <a href="#" class="nav-link">Contests</a>
+        </div>
+    </nav>
+    <div class="container">
+        <form id="add-question-form">
+            <h1 class="title"> Add Question </h1>
+            <label for="name">Question Title:</label>
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+
+            <label for="description">Statement</label>
+            <textarea rows="8" name="description" id="description" placeholder="Statement" required></textarea>
+
+            <div class="one-line">
+                <label for="difficulty"> Difficulty </label>
+                <input type="text" name="difficulty" id="difficulty" placeholder="Difficulty" required>
+
+                <label for="points">Points</label>
+                <input type="text" name="points" id="points" placeholder="Points" required>
+            </div>
+            <label for="testcases">TestCase Input</label>
+            <textarea rows="5" name="testcases" id="testcases" placeholder="Input" required></textarea>
+
+            <label for="output"> Expected Output </label>
+            <textarea rows="5" name="output" id="output" placeholder="Output" required></textarea>
+
+            <input type="submit" name="submit" id="submit" value="Submit" required>
+        </form>
+    </div>
+
+</body>
+
+</html>
