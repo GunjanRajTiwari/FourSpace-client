@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Add Question</title>
+
+        <link rel="stylesheet" href="./css/addContest.css" />
+    </head>
+    <body>
+        <nav id="navbar" class="nav glass">
+            <div class="nav-brand">FourSpace</div>
+        </nav>
+
+        <div class="container">
+            <form id="contest-form">
+                <h1 class="title">Add Contest</h1>
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required />
+
+                <label for="info">Info:</label>
+                <textarea name="info" id="info" cols="30" rows="10" placeholder="Info"></textarea>
+
+                <input type="submit" name="submit" id="submit" value="Submit" required />
+            </form>
+        </div>
+
+        <script src="./js/default.js"></script>
+        <script src="./js/addContest.js"></script>
+    </body>
+</html>

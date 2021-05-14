@@ -6,6 +6,7 @@ function enterContest(id) {
 }
 
 window.onload = function() {
+    contestList.innerHTML = "Loading ...";
     const token = localStorage.getItem("token");
     console.log("success");
     fetch(domain + "/contests", {
@@ -16,11 +17,22 @@ window.onload = function() {
         })
         .then((response) => response.json())
         .then((result) => {
+            console.log(result);
+            const authUser = JSON.parse(atob(localStorage.getItem("token").split(".")[1]));
+            if (authUser.type === "company") {
+                const floatBtn = document.createElement("button");
+                floatBtn.innerText = "+";
+                floatBtn.classList.add("float-btn");
+                floatBtn.onclick = () => {
+                    location.href = "/addContest.html";
+                };
+                document.body.append(floatBtn);
+            }
+            contestList.innerHTML = "";
             result.contests.forEach((contest) => {
-                console.log(contest);
                 var contestBox = document.createElement("div");
                 contestBox.classList.add("contest");
-                contestBox.innerHTML = `
+                contestBox.innerHTML += `
                 <div class="info">
                     <p>${contest.company_email}</p>
                     <h3 class="big">${contest.name}</h3>
