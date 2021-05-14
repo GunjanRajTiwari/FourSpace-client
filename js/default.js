@@ -1,4 +1,5 @@
 // Dynamic Navigation bar
+var domain = "https://fourspace.herokuapp.com";
 
 var token = localStorage.getItem("token");
 

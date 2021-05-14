@@ -25,13 +25,13 @@ function register(e) {
     data.password = document.getElementById("pw").value;
 
     fetch(domain + "/register", {
-        method: "POST",
-        headers: {
-            "Content-type": "application/json; charset=UTF-8",
-        },
-        // mode: "no-cors", //cross origin resource sharing
-        body: JSON.stringify(data),
-    })
+            method: "POST",
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+            // mode: "no-cors", //cross origin resource sharing
+            body: JSON.stringify(data),
+        })
         .then(() => {
             location.href = "/login.html";
         })
