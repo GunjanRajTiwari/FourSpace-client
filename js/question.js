@@ -47,10 +47,10 @@ async function run() {
             // mode: "no-cors",
             headers: {
                 "Content-type": "application/json",
+                "token": token
             },
 
             body: JSON.stringify({
-                token,
                 code,
                 language: langMap[language],
                 input,
