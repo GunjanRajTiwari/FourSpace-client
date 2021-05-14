@@ -52,5 +52,11 @@ form {
 }
 
 .one-line {
-    float: left;
+    display: flex;
+    resize: both;
+    overflow: auto;
+}
+
+.half-line {
+    margin-left: 10px;
 }
