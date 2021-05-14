@@ -26,7 +26,7 @@ function show_details(user) {
     }
 }
 
-window.onload = function () {
+window.onload = function() {
     var token = localStorage.getItem("token");
     if (!token) {
         location.href = "/login.html";
@@ -34,13 +34,11 @@ window.onload = function () {
     }
 
     fetch(domain + "/profile", {
-        method: "POST",
-        headers: {
-            "Content-type": "application/json; charset=UTF-8",
-        },
-        // mode: "no-cors", //cross origin resource sharing
-        body: JSON.stringify({ token }),
-    })
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "token": token
+            },
+        })
         .then((res) => res.json())
         .then((result) => {
             console.log(result);

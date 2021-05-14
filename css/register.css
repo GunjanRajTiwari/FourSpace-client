@@ -48,3 +48,7 @@ form {
     margin: 1em;
     display: inline-block;
 }
+
+#nonono {
+    color: red;
+}
