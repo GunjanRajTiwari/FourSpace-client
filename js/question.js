@@ -2,6 +2,7 @@ const editorDiv = document.getElementById("editor");
 const langSelect = document.getElementById("lang");
 const inputField = document.getElementById("input");
 const outputField = document.getElementById("output");
+const questionDiv = document.getElementById('question');
 var domain = "https://fourspace.herokuapp.com";
 const params = new URL(location.href).searchParams;
 const question = params.get("qid");
@@ -33,6 +34,32 @@ const langMap = {
     java: "java",
 };
 
+window.onload = async () => {
+    try {
+        const response = await fetch(domain + "/question/" + question, {
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "token": token,
+            },
+        });
+        const problem = await response.json();
+        console.log(problem);
+        questionDiv.innerHTML = `
+        <h1 class="title">${problem.title}</h1>
+        <p class="statament">
+            ${problem.statement}
+        </p>
+        <div class="info">
+            <span>Difficulty: ${problem.difficulty}</span>
+            <span>Points: ${problem.points}</span>
+        </div>
+        `;
+
+    } catch (e) {
+        console.log(e);
+    }
+};
+
 async function run() {
     try {
         outputField.value = "Running ...";
@@ -49,7 +76,7 @@ async function run() {
             // mode: "no-cors",
             headers: {
                 "Content-type": "application/json",
-                token: token,
+                "token": token,
             },
 
             body: JSON.stringify({
@@ -89,7 +116,7 @@ async function submit() {
             // mode: "no-cors",
             headers: {
                 "Content-type": "application/json",
-                token: token,
+                "token": token,
             },
 
             body: JSON.stringify({
