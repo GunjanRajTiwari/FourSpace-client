@@ -12,10 +12,10 @@
     margin: auto;
 }
 
-.contest {
+.question {
     display: flex;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: 1em 4%;
     margin: 1em;
     background-color: var(--card);
     border-radius: 8px;
@@ -23,22 +23,28 @@
     align-items: center;
 }
 
-.enter {
-    margin-top: 0.5rem;
+.question > div > h2 {
+    display: inline;
 }
 
-#enter {
+.btn {
+    box-sizing: border-box;
+    width: 8em;
+    padding: 0.8em 1em;
+    align-self: center;
     border: none;
-    width: 6.5em;
-    padding: 0.5em 0;
+    background-color: var(--left);
     border-radius: 50px;
+    transition: width 0.2s ease-out;
+    background: var(--left);
     background: linear-gradient(90deg, var(--left), var(--right));
-    font-size: 1.05rem;
     color: var(--dark-bg);
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
-#enter:hover {
-    transform: scaleX(1.05);
+.btn:hover {
+    width: 8.5em;
 }
 
 .big {

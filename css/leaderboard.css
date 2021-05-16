@@ -1,0 +1,23 @@
+.container {
+    margin: 4%;
+}
+
+.table {
+    max-width: 600px;
+    margin: auto;
+}
+
+.table > div {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--card);
+    backdrop-filter: blur(4px);
+    margin-top: 0.2em;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+.top {
+    color: var(--left);
+    font-weight: bold;
+}

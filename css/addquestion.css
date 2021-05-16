@@ -1,9 +1,4 @@
-/* default */
-
 @import url(./default.css);
-
-/* custom */
-
 .container {
     padding: 4%;
 }
@@ -26,14 +21,13 @@ form {
 }
 
 #submit {
+    margin: 1.5em 0 0;
     width: 8em;
     padding: 0.8em 0;
     align-self: center;
     border: none;
-    background-color: var(--left);
     border-radius: 50px;
-    transition: width 0.2s ease-out;
-    background: var(--left);
+    transition: transform 0.2s ease-out;
     background: linear-gradient(90deg, var(--left), var(--right));
     color: var(--dark-bg);
     font-size: 1.1rem;
@@ -41,14 +35,28 @@ form {
 }
 
 #submit:hover {
-    width: 8.5em;
+    transform: scaleX(1.05);
 }
 
-.choice {
-    margin: 1em;
-    display: inline-block;
+#description,
+#testcases,
+#output {
+    border-radius: 8px;
+    font-family: var(--small);
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    outline: none;
 }
 
-#nonono {
-    color: red;
+.one-line {
+    display: flex;
+    resize: both;
+    overflow: auto;
+}
+
+.half-line {
+    margin-left: 10px;
 }

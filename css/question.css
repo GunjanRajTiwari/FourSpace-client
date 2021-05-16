@@ -109,3 +109,18 @@
     outline: none;
     padding: 0.4em;
 }
+
+/* Question */
+
+.question {
+    padding: 0 4% 1em;
+}
+
+.question > p {
+    line-height: 1.2;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}

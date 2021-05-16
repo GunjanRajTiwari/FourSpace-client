@@ -1,5 +1,19 @@
+.container {
+    display: flex;
+    padding: 4%;
+    justify-content: space-between;
+}
+
+.left {
+    margin-top: 2em;
+}
+
+.right > img {
+    width: 100%;
+    max-width: 600px;
+}
+
 .jumbo {
-    text-align: center;
     font-family: var(--big);
     color: var(--left);
     font-size: 3.6rem;
@@ -7,9 +21,18 @@
 }
 
 .tagline {
-    padding: 1em 20%;
-    text-align: center;
+    padding: 1em 0;
     letter-spacing: 0.2rem;
     line-height: 1.6;
     transition: all 0.6s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .jumbo,
+    .tagline {
+        text-align: center;
+    }
 }
