@@ -25,8 +25,13 @@ function login(e) {
     })
         .then((res) => res.json())
         .then((result) => {
-            localStorage.setItem("token", result.token);
-            location.href = "/profile.html";
+            if(result.error){
+                location.href = '/register.html'
+            } else {
+                localStorage.setItem("token", result.token);
+                location.href = "/profile.html";
+            }
+            
         })
         .catch((e) => console.log(e));
 }

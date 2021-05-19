@@ -1,4 +1,5 @@
 // Dynamic Navigation bar
+var domain = "https://fourspace.herokuapp.com";
 
 var token = localStorage.getItem("token");
 
@@ -14,6 +15,7 @@ if (!token) {
     links.innerHTML = `
             <a href="/profile.html" class="nav-link">Profile</a>
             <a href="/contests.html" class="nav-link">Contests</a>
+            <a href="/leaderboard.html" class="nav-link">Top</a>
         `;
 }
 

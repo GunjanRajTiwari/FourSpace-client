@@ -1,5 +1,4 @@
 @import url(./default.css);
-
 .container {
     margin: 0.5em 4%;
 }
@@ -55,7 +54,7 @@
     border: 0;
     border-radius: 50%;
     outline: 0;
-    position: absolute;
+    position: fixed;
     bottom: 1em;
     right: 1em;
     transition: color 0.4s ease;
