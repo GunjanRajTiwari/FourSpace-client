@@ -35,5 +35,8 @@ function register(e) {
         .then(() => {
             location.href = "/login.html";
         })
-        .catch((e) => console.log(e));
+        .catch((e) => {
+            console.log(e);
+            showError(e);
+        });
 }

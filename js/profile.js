@@ -28,12 +28,17 @@ function show_details(user) {
 
 window.onload = function() {
     var token = localStorage.getItem("token");
-    if (!token) {
-        location.href = "/login.html";
-        return;
+    // if (!token) {
+    //     location.href = "/login.html";
+    //     return;
+    // }
+    const params = new URL(location.href).searchParams;
+    var email = params.get("email");
+    if (!email) {
+        email = "";
     }
-
-    fetch(domain + "/profile", {
+    console.log(email);
+    fetch(`${domain}/profile/${email}`, {
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
                 "token": token
@@ -42,9 +47,16 @@ window.onload = function() {
         .then((res) => res.json())
         .then((result) => {
             console.log(result);
-            show_details(result);
+            if (result.error) {
+                showError(result.error);
+            } else {
+                show_details(result);
+            }
         })
-        .catch((e) => console.log(e));
+        .catch((e) => {
+            console.log(e);
+            showError(e);
+        });
 };
 
 document.getElementById("logout").addEventListener("click", () => {

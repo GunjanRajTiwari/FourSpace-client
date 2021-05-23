@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Question</title>
 
-        <link rel="icon" type="image/png" href="./assets/favicon.png" />
-        <link rel="stylesheet" href="./css/question.css" />
-    </head>
-    <body>
-        <nav id="navbar" class="nav glass">
-            <div class="nav-brand">FourSpace</div>
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
 
-        <div class="container">
-            <div id="question" class="question">Loading ...</div>
-            <div class="editor-area">
-                <div class="editor-top">
-                    <span class="solution">Your Solution:</span>
-                    <div class="language">
-                        <label for="cars">Language:</label>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./css/question.css" />
+</head>
 
-                        <select name="lang" class="lang" id="lang">
+<body>
+    <nav id="navbar" class="nav glass">
+        <div class="nav-brand">FourSpace</div>
+    </nav>
+
+    <div class="container">
+        <div id="question" class="question">Loading ...</div>
+        <div class="editor-area">
+            <div class="editor-top">
+                <span class="solution">Your Solution:</span>
+                <div class="language">
+                    <label for="cars">Language:</label>
+
+                    <select name="lang" class="lang" id="lang">
                             <option value="clike">C++</option>
                             <option value="java">Java</option>
                             <!-- <option value="javascript">JavaScript</option> -->
                             <option value="python">Python</option>
                         </select>
-                    </div>
                 </div>
+            </div>
 
-                <div class="editor" id="editor"></div>
+            <div class="editor" id="editor"></div>
 
-                <div class="editor-bottom">
-                    <div class="input">
-                        <label for="input">Input:</label>
-                        <textarea name="input" id="input" class="input-field"></textarea>
-                    </div>
-                    <div class="output">
-                        <label for="output">Output:</label>
-                        <textarea
-                            name="output"
-                            id="output"
-                            class="output-field"
-                            disabled
-                        ></textarea>
-                    </div>
-                    <div class="buttons">
-                        <button onclick="run()" class="run">Run</button>
-                        <button onclick="submit()" class="run">Submit</button>
-                    </div>
+            <div class="editor-bottom">
+                <div class="input">
+                    <label for="input">Input:</label>
+                    <textarea name="input" id="input" class="input-field"></textarea>
+                </div>
+                <div class="output">
+                    <label for="output">Output:</label>
+                    <textarea name="output" id="output" class="output-field" disabled></textarea>
+                </div>
+                <div class="buttons">
+                    <button onclick="run()" class="run">Run</button>
+                    <button onclick="submit()" class="run">Submit</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="./js/default.js"></script>
-        <!-- CodeMirror -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/mode/clike/clike.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/python/python.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/edit/closebrackets.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/lint/json-lint.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/dracula.css"
-        />
-        <script src="./js/question.js"></script>
-    </body>
+    <script src="./js/default.js"></script>
+    <!-- CodeMirror -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/python/python.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.60.0/addon/lint/json-lint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/theme/dracula.css" />
+    <script src="./js/question.js"></script>
+</body>
+
 </html>

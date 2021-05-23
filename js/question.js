@@ -34,7 +34,7 @@ const langMap = {
     java: "java",
 };
 
-window.onload = async () => {
+window.onload = async() => {
     try {
         const response = await fetch(domain + "/question/" + question, {
             headers: {
@@ -86,6 +86,10 @@ async function run() {
             }),
         });
         var output = await response.json();
+        if (output.error) {
+            showError(output.error);
+            return;
+        }
         if (output.status == "1") {
             outputField.style.outline = "2px solid green";
         } else {
@@ -96,6 +100,7 @@ async function run() {
     } catch (e) {
         outputField.value = "";
         console.log(e);
+        showError(e);
     }
 }
 
