@@ -66,3 +66,7 @@
 .float-btn:hover {
     color: white;
 }
+
+.mailnlead {
+    display: flex;
+}
