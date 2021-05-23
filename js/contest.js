@@ -21,6 +21,18 @@ window.onload = () => {
             }).then(res => res.json())
             .then(result => {
                 console.log(result);
+
+                const authUser = JSON.parse(atob(localStorage.getItem("token").split(".")[1]));
+                if (authUser.type === "company") {
+                    const floatBtn = document.createElement("button");
+                    floatBtn.innerText = "+";
+                    floatBtn.classList.add("float-btn");
+                    floatBtn.onclick = () => {
+                        location.href = "/addquestion.html";
+                    };
+                    document.body.append(floatBtn);
+                }
+
                 title.innerHTML = result.name;
                 company.innerHTML = result.company_email;
                 info.innerHTML = result.info;
