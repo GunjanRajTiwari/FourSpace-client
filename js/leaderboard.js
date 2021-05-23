@@ -18,6 +18,9 @@ window.onload = async() => {
             }
         }).then(res => res.json())
         .then(result => {
+            if (result.error) {
+                showError(result.error);
+            }
             console.log(result);
             result.users.forEach((user, index) => {
                 const div = document.createElement("div");

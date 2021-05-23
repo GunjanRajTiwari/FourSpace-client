@@ -17,6 +17,10 @@ window.onload = function() {
         })
         .then((response) => response.json())
         .then((result) => {
+            if (result.error) {
+                showError(result.error);
+                return;
+            }
             console.log(result);
             const authUser = JSON.parse(atob(localStorage.getItem("token").split(".")[1]));
             if (authUser.type === "company") {

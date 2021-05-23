@@ -2,7 +2,7 @@ const editorDiv = document.getElementById("editor");
 const langSelect = document.getElementById("lang");
 const inputField = document.getElementById("input");
 const outputField = document.getElementById("output");
-const domain = "https://fourspace.herokuapp.com";
+//const domain = "https://fourspace.herokuapp.com";
 
 var editor = CodeMirror(editorDiv, {
     lineNumbers: true,
@@ -57,6 +57,10 @@ async function run() {
             }),
         });
         var output = await response.json();
+        if (output.error) {
+            showError(output.error);
+            return;
+        }
         if (output.status == "1") {
             outputField.style.outline = "2px solid green";
         } else {
@@ -67,5 +71,6 @@ async function run() {
     } catch (e) {
         outputField.value = "";
         console.log(e);
+        showError(e);
     }
 }

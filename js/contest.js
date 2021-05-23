@@ -24,6 +24,10 @@ window.onload = () => {
                 },
             }).then(res => res.json())
             .then(result => {
+                if (result.error) {
+                    showError(result.error);
+                    return;
+                }
                 console.log(result);
                 title.innerHTML = result.name;
                 company.innerHTML = result.company_email;

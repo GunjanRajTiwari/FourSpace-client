@@ -28,10 +28,10 @@ function show_details(user) {
 
 window.onload = function() {
     var token = localStorage.getItem("token");
-    if (!token) {
-        location.href = "/login.html";
-        return;
-    }
+    // if (!token) {
+    //     location.href = "/login.html";
+    //     return;
+    // }
     const params = new URL(location.href).searchParams;
     var email = params.get("email");
     if (!email) {
@@ -47,7 +47,11 @@ window.onload = function() {
         .then((res) => res.json())
         .then((result) => {
             console.log(result);
-            show_details(result);
+            if (result.error) {
+                showError(result.error);
+            } else {
+                show_details(result);
+            }
         })
         .catch((e) => console.log(e));
 };
