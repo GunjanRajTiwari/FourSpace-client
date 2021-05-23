@@ -53,7 +53,10 @@ window.onload = function() {
                 show_details(result);
             }
         })
-        .catch((e) => console.log(e));
+        .catch((e) => {
+            console.log(e);
+            showError(e);
+        });
 };
 
 document.getElementById("logout").addEventListener("click", () => {

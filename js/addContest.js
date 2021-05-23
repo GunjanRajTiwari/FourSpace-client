@@ -37,7 +37,10 @@ window.onload = () => {
                     alert("Contest created Successfully!!");
                     location.href = "/contests.html";
                 })
-                .catch((e) => alert("Contest creation failed!!"));
+                .catch((e) => {
+                    alert("Contest creation failed!!");
+                    showError(e);
+                });
             showError(e);
         }
     }

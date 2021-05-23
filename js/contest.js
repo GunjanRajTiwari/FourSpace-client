@@ -14,9 +14,7 @@ window.onload = () => {
     if (!cid) {
         location.href = "/contests.html";
     } else {
-        leaderboard.addEventListener('click', () => {
-            location.href = '/leaderboard.html?cid=' + cid;
-        })
+        leaderboard.addEventListener("click", () => location.href = "/leaderboard.html?cid=" + cid);
         fetch(`${domain}/contests/${cid}`, {
                 headers: {
                     "Content-type": "application/json",

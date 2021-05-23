@@ -25,10 +25,10 @@ window.onload = async() => {
             result.users.forEach((user, index) => {
                 const div = document.createElement("div");
                 div.innerHTML = `
-        <span>#${index + 1}</span>
-        <span>${user.name}</span>
-        <span>${user[field]}🏆</span>`;
+                <span>#${index + 1}</span>
+                <span>${user.name}</span>
+                <span>${user[field]}🏆</span>`;
                 table.appendChild(div);
             });
-        })
-};
+        });
+}
