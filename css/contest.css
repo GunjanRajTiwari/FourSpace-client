@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-.question>div>h2 {
+.question > div > h2 {
     display: inline;
 }
 
@@ -53,13 +53,4 @@
 
 .info {
     margin-bottom: 5px;
-}
-
-.mailnlead {
-    display: flex;
-    justify-content: center;
-}
-
-.btn2 {
-    margin-left: 2em;
 }
