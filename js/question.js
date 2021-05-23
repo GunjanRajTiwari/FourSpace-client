@@ -2,7 +2,10 @@ const editorDiv = document.getElementById("editor");
 const langSelect = document.getElementById("lang");
 const inputField = document.getElementById("input");
 const outputField = document.getElementById("output");
+var question = document.getElementById("question");
 //const domain = "https://fourspace.herokuapp.com";
+
+
 
 var editor = CodeMirror(editorDiv, {
     lineNumbers: true,
@@ -30,6 +33,20 @@ const langMap = {
     clike: "cpp",
     java: "java",
 };
+
+const params = new URL(location.href).searchParams;
+var qid = params.get("qid");
+fetch(`${domain}/question/${qid}`, {
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+            "token": token
+        },
+    })
+    .then((res) => res.json())
+    .then((result) => {
+        console.log(result);
+        question.innerHTML = result.statement;
+    })
 
 async function run() {
     try {
