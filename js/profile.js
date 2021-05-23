@@ -32,8 +32,13 @@ window.onload = function() {
         location.href = "/login.html";
         return;
     }
-
-    fetch(domain + "/profile", {
+    const params = new URL(location.href).searchParams;
+    var email = params.get("email");
+    if (!email) {
+        email = "";
+    }
+    console.log(email);
+    fetch(`${domain}/profile/${email}`, {
             headers: {
                 "Content-type": "application/json; charset=UTF-8",
                 "token": token
