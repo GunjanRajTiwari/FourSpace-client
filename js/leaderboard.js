@@ -27,7 +27,9 @@ window.onload = async() => {
                 div.innerHTML = `
                 <span>#${index + 1}</span>
                 <span>${user.name}</span>
-                <span>${user[field]}🏆</span>`;
+                <span>${user[field]}🏆</span>
+                `;
+                div.onclick = () => { location.href = `profile.html?email=${user.email}` };
                 table.appendChild(div);
             });
         });
