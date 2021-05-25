@@ -1,6 +1,7 @@
 // Dynamic Navigation bar
 var domain = "https://fourspace.herokuapp.com";
 
+
 var token = localStorage.getItem("token");
 
 const links = document.createElement("div");
@@ -20,6 +21,17 @@ if (!token) {
 }
 
 document.getElementById("navbar").appendChild(links);
+
+function showError(error) {
+    console.log(error);
+    document.getElementsByClassName("container")[0].innerHTML = `
+    <div class="error">
+    ${error}
+    </div>
+    `;
+
+}
+
 
 // Nav bar end
 

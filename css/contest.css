@@ -69,3 +69,11 @@
         font-size: 0.8rem;
     }
 }
+.mailnlead {
+    display: flex;
+    justify-content: center;
+}
+
+.btn2 {
+    margin-left: 2em;
+}
