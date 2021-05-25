@@ -29,7 +29,7 @@ window.onload = () => {
                 console.log(result);
 
                 const authUser = JSON.parse(atob(localStorage.getItem("token").split(".")[1]));
-                if (authUser.type === "company") {
+                if (authUser.type === "company" && authUser.email===result.company_email) {
                     const floatBtn = document.createElement("button");
                     floatBtn.innerText = "+";
                     floatBtn.classList.add("float-btn");
