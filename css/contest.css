@@ -56,6 +56,25 @@
     margin: 5px;
 }
 
+.float-btn {
+    height: 48px;
+    width: 48px;
+    border: 0;
+    border-radius: 50%;
+    outline: 0;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    transition: color 0.4s ease;
+    font-size: 2rem;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+}
+
+.float-btn:hover {
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         margin: auto 1%;
