@@ -44,7 +44,9 @@ p {
     line-height: 1.4px;
 }
 
+
 /* Navigation Bar */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -64,4 +66,14 @@ p {
 
 .nav-link {
     margin: 0 0.5em;
+}
+
+.error {
+    font-size: 1.4rem;
+    margin: 4%;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid rgb(214, 20, 69);
+    background: rgba(214, 20, 69, 0.4);
+    border-radius: 8px;
 }

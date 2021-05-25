@@ -29,11 +29,19 @@ window.onload = () => {
                 })
                 .then((res) => res.json())
                 .then((result) => {
+                    if (result.error) {
+                        showError(result.error);
+                        return;
+                    }
                     console.log(result);
                     alert("Contest created Successfully!!");
                     location.href = "/contests.html";
                 })
-                .catch((e) => alert("Contest creation failed!!"));
+                .catch((e) => {
+                    alert("Contest creation failed!!");
+                    showError(e);
+                });
+            showError(e);
         }
     }
 };
