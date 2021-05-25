@@ -32,7 +32,7 @@
 
 #enter {
     border: none;
-    width: 6.5em;
+    width: 5em;
     padding: 0.5em 0;
     border-radius: 50px;
     background: linear-gradient(90deg, var(--left), var(--right));
@@ -65,4 +65,19 @@
 
 .float-btn:hover {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: auto 1%;
+    }
+
+    .contest {
+        margin: 0.3em;
+        padding: 0.5em 0.8em 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }

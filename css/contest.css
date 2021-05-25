@@ -29,7 +29,7 @@
 
 .btn {
     box-sizing: border-box;
-    width: 8em;
+    width: 5em;
     padding: 0.8em 1em;
     align-self: center;
     border: none;
@@ -53,4 +53,19 @@
 
 .info {
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: auto 1%;
+    }
+
+    .box {
+        margin: 0.3em;
+        padding: 0.5em 0.8em 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
