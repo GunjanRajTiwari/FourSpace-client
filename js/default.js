@@ -26,7 +26,7 @@ function showError(error) {
     console.log(error);
     document.getElementsByClassName("container")[0].innerHTML = `
     <div class="error">
-    ${error}
+    ${JSON.stringify(error.detail || error)}
     </div>
     `;
 
