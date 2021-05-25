@@ -28,7 +28,7 @@ window.onload = () => {
                     floatBtn.innerText = "+";
                     floatBtn.classList.add("float-btn");
                     floatBtn.onclick = () => {
-                        location.href = "/addquestion.html";
+                        location.href = '/addquestion.html?cid='+ cid;
                     };
                     document.body.append(floatBtn);
                 }
