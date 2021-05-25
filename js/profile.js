@@ -1,4 +1,5 @@
 var domain = "https://fourspace.herokuapp.com";
+var btn = document.getElementById("btn");
 
 function show_details(user) {
     var name = user.name;
@@ -36,6 +37,8 @@ window.onload = function() {
     var email = params.get("email");
     if (!email) {
         email = "";
+    } else {
+        btn.innerHTML = "";
     }
     console.log(email);
     fetch(`${domain}/profile/${email}`, {
