@@ -57,15 +57,6 @@
 
 ---
 
-## Fonts:
-
-- Montserrat
-- Poppins
-- Comforta
-- Open sans
-
----
-
 ## Technologies Used:
 - HTML
 - CSS
@@ -80,8 +71,8 @@
 ▹ Interview Platform
 - The recruiters will be able to take interview of their preferred contestants.
 
-▹Programming Games:
-- There will be different coding games which will give the users entertainment along with skill build-up simultaneously.
+▹Programming Activities:
+- There will be different coding activities which will aid in boosting skills of the users.
 
 ▹ Feedback Form:
 - The users will be able to give the feedback of our websites so that we can improve our weaknesses.
@@ -95,5 +86,3 @@
 👦 Sandesh Dhungana: https://github.com/sandesh32
 
 👦 Umesh Saud: https://github.com/umsisamess
-
-
