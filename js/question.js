@@ -46,9 +46,7 @@ window.onload = async() => {
         console.log(problem);
         questionDiv.innerHTML = `
         <h1 class="title">${problem.title}</h1>
-        <pre class="statament">
-            ${problem.statement}
-        </pre>
+        <pre class="statement">${problem.statement}</pre>
         <div class="info">
             <span>Difficulty: ${problem.difficulty}</span>
             <span>Points: ${problem.points}</span>
