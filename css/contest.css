@@ -72,6 +72,8 @@
 
 .float-btn:hover {
     color: white;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         margin: auto 1%;
