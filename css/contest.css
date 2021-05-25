@@ -29,7 +29,6 @@
 
 .btn {
     box-sizing: border-box;
-    width: 5em;
     padding: 0.8em 1em;
     align-self: center;
     border: none;
@@ -44,15 +43,17 @@
 }
 
 .btn:hover {
-    width: 8.5em;
+    opacity: 0.9;
 }
 
 .big {
     font-size: 1.3rem;
 }
 
-.info {
-    margin-bottom: 5px;
+#info {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 5px;
 }
 
 @media only screen and (max-width: 768px) {
