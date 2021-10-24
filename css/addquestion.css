@@ -53,10 +53,10 @@ form {
 
 .one-line {
     display: flex;
-    resize: both;
-    overflow: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.half-line {
-    margin-left: 10px;
+.one-half-line {
+    margin-right: 10px;
 }

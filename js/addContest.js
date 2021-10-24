@@ -29,7 +29,7 @@ window.onload = () => {
                 })
                 .then((res) => res.json())
                 .then((result) => {
-                    if (result.error) {
+                    if (result && result.error) {
                         showError(result.error);
                         return;
                     }
@@ -38,8 +38,10 @@ window.onload = () => {
                     location.href = "/contests.html";
                 })
                 .catch((e) => {
-                    alert("Contest creation failed!!");
-                    showError(e);
+                    // alert("Contest creation failed!!");
+                    location.href = "/contests.html";
+                    console.log(e)
+                    // showError(e);
                 });
             showError(e);
         }

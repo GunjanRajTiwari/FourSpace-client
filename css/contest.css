@@ -23,13 +23,12 @@
     align-items: center;
 }
 
-.question>div>h2 {
+.question > div > h2 {
     display: inline;
 }
 
 .btn {
     box-sizing: border-box;
-    width: 8em;
     padding: 0.8em 1em;
     align-self: center;
     border: none;
@@ -44,20 +43,56 @@
 }
 
 .btn:hover {
-    width: 8.5em;
+    opacity: 0.9;
 }
 
 .big {
     font-size: 1.3rem;
 }
 
-.info {
-    margin-bottom: 5px;
+#info {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px;
 }
 
+.float-btn {
+    height: 48px;
+    width: 48px;
+    border: 0;
+    border-radius: 50%;
+    outline: 0;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    transition: color 0.4s ease;
+    font-size: 2rem;
+    background: var(--left);
+    background: linear-gradient(90deg, var(--left), var(--right));
+}
+
+.float-btn:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: auto 1%;
+    }
+
+    .box {
+        margin: 0.3em;
+        padding: 0.5em 0.8em 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
 .mailnlead {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn2 {

@@ -27,6 +27,18 @@ window.onload = () => {
                     return;
                 }
                 console.log(result);
+
+                const authUser = JSON.parse(atob(localStorage.getItem("token").split(".")[1]));
+                if (authUser.type === "company" && authUser.email===result.company_email) {
+                    const floatBtn = document.createElement("button");
+                    floatBtn.innerText = "+";
+                    floatBtn.classList.add("float-btn");
+                    floatBtn.onclick = () => {
+                        location.href = '/addquestion.html?cid='+ cid;
+                    };
+                    document.body.append(floatBtn);
+                }
+
                 title.innerHTML = result.name;
                 company.innerHTML = result.company_email;
                 info.innerHTML = result.info;

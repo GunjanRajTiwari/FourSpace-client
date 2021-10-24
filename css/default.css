@@ -44,7 +44,6 @@ p {
     line-height: 1.4px;
 }
 
-
 /* Navigation Bar */
 
 .nav {
@@ -76,4 +75,10 @@ p {
     border: 1px solid rgb(214, 20, 69);
     background: rgba(214, 20, 69, 0.4);
     border-radius: 8px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
 }
