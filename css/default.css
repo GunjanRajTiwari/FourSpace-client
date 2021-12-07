@@ -80,5 +80,7 @@ p {
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
 }
